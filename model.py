@@ -1,29 +1,20 @@
+from mongoengine import Document, StringField, DateTimeField, ReferenceField
 import datetime
-
-import pymongo
-import bson
-
-pymongo.objectid = bson.objectid
-import mongokit
-
-class Document(mongokit.Document):
-    __database__ = "uppsalabarn"
-    use_dot_notation = True
+import hashlib
 
 class City(Document):
-    __collection__ = "cities"
-    structure = {
-        'name': unicode
-    }
-    required_fields = ['name']
+    name = StringField(required=True)
 
 class Activity(Document):
-    __collection__ = "activities"
-    structure = {
-        'name': unicode,
-        'starts_at': datetime.datetime,
-        'city' : City
-    }
-    required_fields = ['name', 'starts_at', 'city']
+    name = StringField(required=True)
+    #description = StringField(required=True)
+    date = DateTimeField(required=True)
+    city = StringField(required=True)
 
+    def __unicode__(self):
+        return unicode(vars(self))
+
+    def save(self, *args, **kwargs):
+        self.checksum = hashlib.md5(self.name.encode("utf8") + str(self.date)).hexdigest() 
+        return super(Activity, self).save(*args, **kwargs)
 
