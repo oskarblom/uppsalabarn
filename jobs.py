@@ -12,7 +12,7 @@ def untguiden():
     base_url = "http://untguiden.teknomedia.se"
 
     startdate = date.today()
-    dates = (startdate + timedelta(days=i) for i in range(7))
+    dates = (startdate + timedelta(days=i) for i in range(1))
 
     for act_date in dates:
         eventlist_url = "%s/Default.aspx?action=search&c=3443&d=%s" % (base_url, act_date)
@@ -30,18 +30,24 @@ def untguiden():
 
     return activities
 
-def do_thing2():
-    a = Activity(name=u"Bogus act", date=datetime.date.today(), city=u"uppsala")
-    return [a]
+def temp():
+    return []
 
 if __name__ == '__main__':
-    jobs = [gevent.spawn(j) for j in (untguiden, do_thing2)]
+    jobs = [gevent.spawn(j) for j in (untguiden, temp)]
     print "jobs spawned"
     gevent.joinall(jobs)
 
     connect("uppsalabarn")
     Activity.drop_collection()
-    activities = (job.value for job in jobs)
-    for act in itertools.chain(*activities):
-        act.save()
-        print act.checksum
+    current_activities = Activity.objects()
+
+    for act in itertools.chain(*(job.value for job in jobs)):
+        if not any(a.checksum() == act.checksum() for a in current_activities):
+            act.save()
+            print act.date
+            print "Saved object"
+        else:
+            print act.date
+            print "Didn't save object"
+
