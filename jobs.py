@@ -4,10 +4,15 @@ from datetime import date, timedelta
 from model import *
 from mongoengine import connect
 import gevent
-import urllib2
 import itertools
+import logging
+import re
+import urllib2
+
+log = logging.getLogger("jobs")
 
 def untguiden():
+    log.debug("Getting activities from untguiden")
     activities = []
     base_url = "http://untguiden.teknomedia.se"
 
@@ -24,8 +29,12 @@ def untguiden():
             item_url = "%s%s" % (base_url, url)
             item_doc = urllib2.urlopen(item_url).read()
             item_soup = BeautifulSoup(item_doc)
-            act = Activity(date=act_date, city="uppsala")
-            act.name = item_soup.find("h1").find(text=True)
+
+            act = Activity(city="uppsala")
+            header = item_soup.find("h1")
+            act.name = header.find(text=True)
+            act.description = re.sub(r"^", "", header.parent.text, count=1)
+            act.starts_at = datetime.datetime.combine(act_date, datetime.time())
             activities.append(act)
 
     return activities
@@ -34,20 +43,19 @@ def temp():
     return []
 
 if __name__ == '__main__':
+    logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.DEBUG)
+
     jobs = [gevent.spawn(j) for j in (untguiden, temp)]
-    print "jobs spawned"
     gevent.joinall(jobs)
 
     connect("uppsalabarn")
-    Activity.drop_collection()
     current_activities = Activity.objects()
+
+    today = datetime.datetime.combine(datetime.date.today(), datetime.time())
+    deleted = [a.delete() for a in current_activities if a.starts_at < today]
+    log.debug("Deleted %s old activities", len(deleted))
 
     for act in itertools.chain(*(job.value for job in jobs)):
         if not any(a.checksum() == act.checksum() for a in current_activities):
             act.save()
-            print act.date
-            print "Saved object"
-        else:
-            print act.date
-            print "Didn't save object"
-
+            log.debug("Saved new activity %s", act)
