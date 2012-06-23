@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!-- Event.ascx --> 
+		<title>Destination Uppsala</title>
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1"/>
+		<meta name="CODE_LANGUAGE" content="C#"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<meta name="keywords" content="evsearchspot"/>
+		<meta name="description" content="Här finns allt om Uppsala! Hitta evenemang och andra roliga saker att göra. Boka hotell, vandrarhem och annat boende. Mysiga restauranger och caféer. För dig som är turist, besökare eller boende i staden."/>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="Css/layout.css" media="screen,print" />
+		<link rel="stylesheet" href="css/scroll.css" type="text/css" media="screen, projection" />
+			<script language="JavaScript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jq.theScroll.js"></script>
+			<script language="JavaScript" type="text/javascript" src="Lib/lib.js"></script>
+			<script language="javascript" type="text/javascript" src="Lib/onload.js"></script>
+			<script language="javaScript" type="text/javascript">
+		<!--
+			function doSearchEv(objTyp) {
+				var searchString;
+				frm = document.forms[0];
+
+				searchString = "DynPage.aspx?id=9582&search=true"
+				
+				if (objTyp=='0') searchString += "&start=2012-06-23&end=2012-06-23&cat=5";
+				if (objTyp=='1') searchString = "DynPage.aspx?id=9582&today=true";
+				if (objTyp=='2') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-24&end=2012-06-24";
+				if (objTyp=='3') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-06-26";
+				if (objTyp=='4') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-06-30";
+				if (objTyp=='5') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-07-23";
+				if (objTyp=='6') searchString += "&start=2012-06-23&end=2012-06-30&cat=1";
+				if (objTyp=='7') searchString += "&start=2012-06-23&end=2013-06-23";
+				if (objTyp=='8') searchString += "&big=true";
+
+				if (frm.omr1.checked == true) searchString += "&area=1"
+				if (frm.omr2.checked == true) searchString += "&area=2"
+				if (frm.omr3.checked == true) searchString += "&area=3"
+				if (frm.omr4.checked == true) searchString += "&area=4"
+				if (frm.omr5.checked == true) searchString += "&area=5"
+					
+				document.location.href = (searchString);
+			}
+
+
+			function doSearchAreaEv(objTyp, area) {
+				var searchString;
+				frm = document.forms[0];
+
+				searchString = "DynPage.aspx?id=9582&search=true"
+				
+				if (objTyp=='0') searchString += "&start=2012-06-23&end=2012-06-23&cat=5";
+				if (objTyp=='1') searchString = "DynPage.aspx?id=9582&today=true";
+				if (objTyp=='2') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-24&end=2012-06-24";
+				if (objTyp=='3') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-06-26";
+				if (objTyp=='4') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-06-30";
+				if (objTyp=='5') searchString = "DynPage.aspx?id=9582&today=true&start=2012-06-23&end=2012-07-23";
+				if (objTyp=='6') searchString += "&start=2012-06-23&end=2012-06-30&cat=1";
+				if (objTyp=='7') searchString += "&start=2012-06-23&end=2013-06-23";
+				if (objTyp=='8') searchString += "&big=true";
+
+				if (area!='0') searchString += "&area=" + area;
+
+					
+				document.location.href = (searchString);
+			}
+			
+			function doSearch(objTyp) {
+				var searchString;
+				frm = document.forms[0];
+
+				if(objTyp=='99') 
+					searchString = "DynPage.aspx?id=9584&search=true&id=1039&id=1007&id=1454&id=1041";
+				else
+					searchString = "DynPage.aspx?id=9584&search=true&cat=" + objTyp;
+
+				if (frm.omr1.checked == true) searchString += "&area=1"
+				if (frm.omr2.checked == true) searchString += "&area=2"
+				if (frm.omr3.checked == true) searchString += "&area=3"
+				if (frm.omr4.checked == true) searchString += "&area=4"
+				if (frm.omr5.checked == true) searchString += "&area=5"
+				
+				document.location.href = (searchString);
+			}					
+		//-->
+				</script>
+	</head>
+	<body>
+		<form method="post" action="DynPage.aspx?id=9583&amp;fmid=34680" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzOTE1NjY0MTYPZBYCZg9kFggCDA9kFgJmD2QWAgIDDxYCHgRUZXh0BeMVPHNwYW4gY2xhc3M9InJ0ZlBhcmFncmFwaCI+PHA+PC9wPg0KPGRpdiBpZD0ic2VydmljZXMiIGNsYXNzPSJjb250ZW50Qm94IGhlYWRlciI+DQo8ZGl2IGNsYXNzPSJidCI+DQo8ZGl2PjwvZGl2Pg0KPGg1PlRqw6Ruc3RlcjwvaDU+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiaSI+DQo8ZGl2IGNsYXNzPSJib3hDb250ZW50Ij48YSBocmVmPSIvRHluUGFnZS5hc3B4P2lkPTM3Mzc1IiB0YXJnZXQ9Il9zZWxmIj5CaWxkc3BlbCBvY2ggZmlsbWVyPC9hPjxiciAvPjxhIGhyZWY9IkR5blBhZ2UuYXNweD9pZD0yNTgxIiB0YXJnZXQ9Il9zZWxmIj5Cb2thIGd1aWRhZCB2aXNuaW5nPC9hPjxiciAvPjxhIGhyZWY9IkR5blBhZ2UuYXNweD9pZD0yMTM0MyIgdGFyZ2V0PSJfc2VsZiI+QnJvc2NoeXJlcjwvYT48YnIgLz48YSBocmVmPSJEeW5QYWdlLmFzcHg/aWQ9MjU4MyIgdGFyZ2V0PSJfc2VsZiI+S2FydG9yPC9hPjxiciAvPjxhIGhyZWY9IkR5blBhZ2UuYXNweD9pZD0zMjY0MSI+TMOkbmthciBvY2ggYXBwYXI8L2E+PGJyIC8+PGEgaHJlZj0iRHluUGFnZS5hc3B4P2lkPTk1MjkiPkzDpG1uYSBldmVuZW1hbmc8L2E+PC9kaXY+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiYiI+DQo8ZGl2PsKgPC9kaXY+PC9kaXY+PC9kaXY+DQo8ZGl2IGlkPSJpbmZvIiBjbGFzcz0iY29udGVudEJveCBoZWFkZXIiPg0KPGRpdiBjbGFzcz0iYnQiPg0KPGRpdj48L2Rpdj4NCjxoNT5EZXN0aW5hdGlvbiBVcHBzYWxhIDwvaDU+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiaSI+DQo8ZGl2IGNsYXNzPSJib3hDb250ZW50Ij48YSBocmVmPSJEeW5QYWdlLmFzcHg/aWQ9MjU4NiIgdGFyZ2V0PSJfc2VsZiI+S29udGFrdGEgb3NzPC9hPjxiciAvPjxhIGhyZWY9IkR5blBhZ2UuYXNweD9pZD0zNDQ1NyIgdGFyZ2V0PSJfc2VsZiI+TGVkaWdhIHRqw6Ruc3RlcjwvYT48YnIgLz48YSBocmVmPSJEeW5QYWdlLmFzcHg/aWQ9NjQ4NSIgdGFyZ2V0PSJfc2VsZiI+T20gZsO2cmV0YWdldDwvYT48YnIgLz48YSBocmVmPSIvRHluUGFnZS5hc3B4P2lkPTM2NDEwIiB0YXJnZXQ9Il9zZWxmIj5WYXJ1bcOkcmtlIFVwcHNhbGE8L2E+PGJyIC8+PGEgaHJlZj0iRHluUGFnZS5hc3B4P2lkPTM3OTAxIj5Ww6RybGRza2xhc3MgVXBwc2FsYTwvYT48YnIgLz48YSBocmVmPSJEeW5QYWdlLmFzcHg/aWQ9MjgwNDgiIHRhcmdldD0iX3NlbGYiPlR1cmlzdGJ5csOlPC9hPjxiciAvPjwvZGl2PjwvZGl2Pg0KPGRpdiBjbGFzcz0iYmIiPg0KPGRpdj7CoDwvZGl2PjwvZGl2PjwvZGl2Pg0KPGRpdiBpZD0ic2VydmljZXMiIGNsYXNzPSJjb250ZW50Qm94IGhlYWRlciI+DQo8ZGl2IGNsYXNzPSJidDIiPjwvZGl2Pg0KPGRpdiBjbGFzcz0iYmkiPg0KPGRpdiBjbGFzcz0iYm94Q29udGVudCI+DQo8cD48YnIgLz48YSBocmVmPSJodHRwOi8vd3d3LnVwcHNhbGEuc2UvIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzdHlsZT0iUEFERElORy1MRUZUOiAxNnB4IiBib3JkZXI9IjAiIGFsdD0iVXBwc2FsYSBLb21tdW4iIHNyYz0iL2dyYXBoaWNzLzk3MDIuanBnIj48L2E+PGJyIC8+PGJyIC8+PGJyIC8+DQo8cD48YnIgLz48YSBocmVmPSJodHRwOi8vd3d3LmZ5cmlzaG92LnNlLyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3R5bGU9IlBBRERJTkctTEVGVDogMTZweCIgYm9yZGVyPSIwIiBhbHQ9IkZ5cmlzaG92IiBzcmM9Ii9ncmFwaGljcy83Nzg1LmpwZyI+PC9hPjxiciAvPjxiciAvPjxiciAvPjxhIGhyZWY9Imh0dHA6Ly93d3cudWtrLnNlLyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3R5bGU9IlBBRERJTkctTEVGVDogMjJweCIgYm9yZGVyPSIwIiBhbHQ9IlVwcHNhbGEgS29uc2VydCAmIEtvbmdyZXNzIiBzcmM9Ii9ncmFwaGljcy83NzgxLmpwZyI+PC9hPjxiciAvPjxiciAvPjxiciAvPjxhIGhyZWY9Imh0dHA6Ly93d3cudXBwc2FsYXN0YWRzdGVhdGVyLnNlLyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3R5bGU9IlBBRERJTkctTEVGVDogMjBweCIgYm9yZGVyPSIwIiBhbHQ9IlVwcHNhbGEgU3RhZHN0ZWF0ZXIiIGFsaWduPSJjZW50ZXIiIHNyYz0iL2dyYXBoaWNzLzc3NzkuanBnIj48L2E+PC9wPg0KPHA+wqA8L3A+PC9kaXY+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiYiI+DQo8ZGl2PsKgPC9kaXY+PC9kaXY+PC9kaXY+DQo8ZGl2IGlkPSJzZXJ2aWNlcyIgY2xhc3M9ImNvbnRlbnRCb3ggaGVhZGVyIj4NCjxkaXYgY2xhc3M9ImJ0MiI+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiaSI+DQo8ZGl2IGNsYXNzPSJib3hDb250ZW50Ij4NCjxwIHN0eWxlPSJURVhULUFMSUdOOiBjZW50ZXI7IE1BUkdJTi1SSUdIVDogMTFweCI+PGJyIC8+PGEgaHJlZj0iaHR0cDovL3d3dy5ldXJvcGVhbmNpdGllc21hcmtldGluZy5jb20vIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBib3JkZXI9IjAiIGFsdD0iRUNNIExvZ2dhIiBzcmM9Ii9ncmFwaGljcy85Njk4LmpwZyI+PC9hPjxiciAvPjxiciAvPjxiciAvPjxiciAvPjxhIGhyZWY9Imh0dHA6Ly93d3cuaWNjYXdvcmxkLmNvbS8iIHRhcmdldD0iX2JsYW5rIj48aW1nIGJvcmRlcj0iMCIgYWx0PSJJQ0NBIiBzcmM9Ii9ncmFwaGljcy8xMDQ2Mi5qcGciPjwvYT48YnIgLz48YnIgLz48YnIgLz48YSBocmVmPSJodHRwOi8vd3d3LmNoYW1iZXIuc2UvIiB0YXJnZXQ9Il9ibGFuayI+PGltZyBib3JkZXI9IjAiIGFsdD0iU3RvY2tob2xtcyBIYW5kZWxza2FtbWFyZSIgc3JjPSIvZ3JhcGhpY3MvOTcwMS5qcGciPjwvYT48YnIgLz48L3A+DQo8cD7CoDwvcD48L2Rpdj48L2Rpdj4NCjxkaXYgY2xhc3M9ImJiIj4NCjxkaXY+wqA8L2Rpdj48L2Rpdj48L2Rpdj48L3NwYW4+ZAIND2QWBgIBD2QWAmYPZBYCAgEPDxYGHg1BbHRlcm5hdGVUZXh0BTlVdGVzZXJ2ZXJpbmcgaSBVcHBzYWxhLiBGb3RvOiBLYWxiYXIvRGVzdGluYXRpb24gVXBwc2FsYS4eB1Rvb2xUaXAFOVV0ZXNlcnZlcmluZyBpIFVwcHNhbGEuIEZvdG86IEthbGJhci9EZXN0aW5hdGlvbiBVcHBzYWxhLh4ISW1hZ2VVcmwFEi9ncmFwaGljcy84MTcxLmpwZ2RkAgUPDxYCHgdWaXNpYmxlZ2RkAgcPZBYCZg9kFgQCAQ9kFgQCAw9kFhQCAQ8PFgIfAAUyPGZvbnQgY2xhc3M9aGVhZDE+VmlzbmluZyBhdiBEaXNhZ8OlcmRlbjwvZm9udD48cD5kZAIFDw8WAh8ABbwBVmlzbmluZyBhdiBvbXLDpWRldCBvY2ggaHVzZW5zIGludGVyacO2cmVyLiBWaWQgYmVob3YgZ2Vub21mw7ZycyB2aXNuaW5nZW4gcGFyYWxsZWxsdCBww6UgZW5nZWxza2Egb2NoIHN2ZW5za2EuIFDDpSBwcm9ncmFtZGFnYXIgw6RyIHZpc25pbmdhcm5hIGluc3TDpGxsZGEgZWZ0ZXJzb20gc3R1Z29ybmEgaMOlbGxzIMO2cHBuYS5kZAIGDw8WBB8ABTc8YnI+DQoJCQkJPGI+TG9rYWw6PC9iPg0KCQkJCURpc2Fnw6VyZGVuLCBHYW1sYSBVcHBzYWxhHwRnZGQCCA8PFgIfAAVHPGJyPg0KCQkJCTxiPlN0YXJ0ZGF0dW06PC9iPiAyMDEyLTA2LTAxPGJyPjxiPlNsdXRkYXR1bTo8L2I+IDIwMTItMDgtMzFkZAIJDw8WBB8ABXg8YnI+DQoJCQkJPGI+VGlkOjwvYj4NCgkJCQlEYWdsaWdlbiBrbC4gMTMuIEJhcm52aXNuaW5nIGtsLiAxNC4gU3R1Z3Zpc25pbmcgaSBOeXZsYSBlbGxlciBCw6RyYnkgbWFuZ8OlcmRzYnlnZ25hZCBrbC4gMTUfBGdkZAIKDw8WBB8ABXI8YnI+DQoJCQkJPGI+QXZnaWZ0OjwvYj4NCgkJCQlGcmkgZW50csOpIHRpbGwgb21yw6VkZXQsIHZpc25pbmcgMzA6LSwgc3R1ZC9wZW5zIDE1Oi0sIGJhcm4gdW5kZXIgMTggw6VyIGZyaSBlbnRyw6kfBGdkZAINDw8WBB8ABTQ8YnI+PGJyPg0KCQkJCTxiPkFycmFuZyZvdW1sO3I6PC9iPg0KCQkJCURpc2Fnw6VyZGVuHwRnZGQCDg8PFgQfAAUnPGJyPg0KCQkJCTxiPlRmbjo8L2I+DQoJCQkJMDE4LTE2IDkxIDgwHwRnZGQCEA8PFgQfAAVsPGJyPg0KCQkJCTxiPkUtcG9zdDo8L2I+DQoJCQkJPGEgaHJlZj0ibWFpbHRvOmRpc2FnYXJkZW5AdXBwbGFuZHNtdXNlZXQuc2UiPmRpc2FnYXJkZW5AdXBwbGFuZHNtdXNlZXQuc2U8L2E+HwRnZGQCEQ8PFgQfAAVyPGJyPg0KCQkJCTxiPldlYmJwbGF0czo8L2I+DQoJCQkJIDxhIGhyZWY9Imh0dHA6Ly93d3cudXBwbGFuZHNtdXNlZXQuc2UiIHRhcmdldD0iX2JsYW5rIj53d3cudXBwbGFuZHNtdXNlZXQuc2U8L2E+HwRnZGQCBw9kFgJmD2QWAmYPZBYCAgEPZBYCZg8PFgIeC05hdmlnYXRlVXJsBSAuLi9QcmludC5hc3B4P2lkPTk1ODMmZm1pZD0zNDY4MGRkAgMPZBYCZg9kFgICAQ9kFgICAQ8QDxYGHg5EYXRhVmFsdWVGaWVsZAUCaWQeDURhdGFUZXh0RmllbGQFCGZyaWVuZGx5HgtfIURhdGFCb3VuZGdkEBUTBEFsbGEMQWxsbcOkbiBkYW5zEUJhcm4vdW5nZC4vZmFtaWxqCUZpbG0vZm90bxFGb2xrZmVzdC9mZXN0aXZhbA1Gw7ZyZWzDpHNuaW5nBklkcm90dA5Lb25zdC9oYW50dmVyaw5LdWx0dXJoaXN0b3JpYQpMaXR0ZXJhdHVyD01hcmtuYWQvYXVrdGlvbglNYXQvZHJ5Y2sFTXVzaWsMTmF0dXIvbWlsasO2EFNjZW4vdGVhdGVyL2RhbnMMVXRzdMOkbGxuaW5nCVZldGVuc2thcBBWaXNuaW5nL2d1aWRldHVyB8OWdnJpZ3QVEwItMQE0ATkCMTEBNgIxOAIxNQEzATcCMTICMTQCMTcBMQIxMAEyATUCMTMBOAIxNhQrAxNnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCDg9kFgQCAQ8WAh8ABdEBPHNwYW4gY2xhc3M9InJ0ZlBhcmFncmFwaCI+PHA+wqkgRGVzdGluYXRpb24gVXBwc2FsYSwgRnlyaXN0b3JnIDgsIDc1MyAxMCBVcHBzYWxhIDxiciAvPis0NiAoMCkxOC03MjcgNDggMDAsIDxhIGhyZWY9Im1haWx0bzppbmZvQGRlc3RpbmF0aW9udXBwc2FsYS5zZSIgdGFyZ2V0PSJfc2VsZiI+aW5mb0BkZXN0aW5hdGlvbnVwcHNhbGEuc2U8L2E+PC9wPjwvc3Bhbj5kAgMPFgIfAAWRAjxzcGFuIGNsYXNzPSJydGZQYXJhZ3JhcGgiPjxwIGFsaWduPSJyaWdodCI+PGEgaHJlZj0iRHluUGFnZS5hc3B4P2lkPTk0NzQmd3VybD1odHRwJTNhJTJmJTJmd3d3LmRlc3RpbmF0aW9udXBwc2FsYS5zZSUyZkR5blBhZ2UuYXNweCUzZmlkJTNkOTU4MyUyNmZtaWQlM2QzNDY4MCIgdGFyZ2V0PSJfc2VsZiI+V2ViYm1hc3RlcjwvYT48YnIgLz48YSBocmVmPSIvRHluUGFnZS5hc3B4P2lkPTIyMjU1IiB0YXJnZXQ9Il9zZWxmIj5PbSB3ZWJicGxhdHNlbjwvYT48L3A+PC9zcGFuPmQCDw9kFgICAw8WAh4LXyFJdGVtQ291bnQCCWQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgMFDGliVG9nZ2xlU2l6ZQUPY3RsMDEkYnRuU2VhcmNoBSxjdGwwMCRjdGwwMSR1Y0V2ZW5lbWFuZ3NrYWxlbmRlciRjYkJpZ0V2ZW50cwUKbXZUb3BJbWFnZQ8PZGZkekY2sGgjJKZgnbaUN5eCq4Lu+j0Co+4zWbbzRNyj+lM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWIgK7xKa0CwLL/JqYAwLJ3ML0AgL6l+COAgLnzdvbAwLI5vKlBQLH5r6mBQLc5r6mBQLE5vKlBQLB5r6mBQLE5p6mBQLE5sKlBQLG5r6mBQLC5r6mBQLE5valBQLE5s6lBQLE5tqlBQLE5r6mBQLE5v6lBQLF5r6mBQLA5r6mBQLE5sqlBQLT5r6mBQLE5salBQLy3Y6BDgKi0uPTAQK90uPTAQK80uPTAQK/0uPTAQK+0uPTAQKyvcm9DQLrvK7qDgKe5NnfAQKQ2Mv6B/MdfIkBAsFsAg2RqDugy+ZzsH7cXn7eyyFnZi44Ismy" />
+</div>
+			<div id="pageContainer">
+				<div id="container">
+					<div id="contentWrapper">
+						
+<div id="topBar">
+	<a href="DynPage.aspx?sid=0"><img src="Images/top_logo.gif" id="topLogo" border="0" alt="Destination Uppsala"></a>
+	<ul id="topMenu">
+		<li id="home"><a href="DynPage.aspx?sid=0" title="Hem"></a></li>
+		<li id="touristInfo"><a href="DynPage.aspx?id=10160&sid=1" title="Hitta rätt i Uppsala län"></a></li>
+		<li id="konfCong"><a href="DynPage.aspx?id=35148&sid=2" title="Kongress &amp; konferens"></a></li>
+		<li id="pressBranch"><a href="DynPage.aspx?id=1278&sid=3" title="Press &amp; bransch"></a></li>
+		<li id="tiLogo"><a href="DynPage.aspx?id=28048" title="Turistinformation"></a></li>
+	</ul>				
+</div>
+						<div id="mainContent" class="selfClear">
+							<div id="menuColumn">
+								<ul id="mainLangRow" class="selfClear chooseLang">
+									<li class="first">
+										<input type="image" name="ibToggleSize" id="ibToggleSize" title="Textstorlek" src="Images/btn_fontsize.gif" />
+									</li>
+									<li>
+										<a id="hpSweNav" title="Svenska" href="/">
+											<img src="Images/btn_swe.gif" border="0" alt=""/></a>
+									</li>
+									<li>
+										<a id="hpEngNav" title="English" href="/en/">
+											<img src="Images/btn_eng.gif" border="0" alt=""/></a>
+									</li>
+									<li style="display: none">
+										<a href="/de/"><img src="Images/btn_de.gif" alt="Deutsch" border="0"/></a></li>
+								</ul>
+								<ul class="selfClear chooseLang mini">
+									<li class="first">
+										<a id="hpChNav" title="Chinese" href="/en/DynPage.aspx?id=25209">
+											<img src="Images/flag_ch.gif" border="0" alt="" /></a>
+									</li>
+									<li>
+										<a id="hpFiNav" title="Soumi" href="/en/DynPage.aspx?id=25198">
+											<img src="Images/flag_fi.gif" border="0" alt=""/></a>
+								    </li>
+									<li>
+										<a id="hpFrNav" title="Français" href="/en/DynPage.aspx?id=25201">
+											<img src="Images/flag_fr.gif" border="0" alt="" /></a>
+									</li>
+									<li>
+										<a id="hpDeNav" title="Deutsch" href="/en/DynPage.aspx?id=25126">
+											<img src="Images/flag_de.gif" border="0" alt=""/></a></li>
+								</ul>
+								<ul class="selfClear chooseLang mini">
+									<li class="first">
+										<a id="hpItNav" title="Italiano" href="/en/DynPage.aspx?id=25192">
+											<img src="Images/flag_it.gif" border="0" alt=""/></a>
+											</li>
+									<li>
+										<a id="hpJpNav" title="Nihongo" href="/en/DynPage.aspx?id=25204">
+											<img src="Images/flag_jp.gif" border="0" alt=""/></a>
+											</li>
+									<li>
+										<a id="hpRuNav" title="Pyccкий" href="/en/DynPage.aspx?id=25195">
+											<img src="Images/flag_ru.gif" border="0" alt=""/></a></li>
+									<li>
+										<a id="hpEsNav" title="Español" href="/en/DynPage.aspx?id=25157">
+											<img src="Images/flag_es.gif" border="0" alt=""/></a></li>
+								</ul>
+								
+<div id="search" class="contentBox header">
+	<div class="bt"><div></div><h5>Sök</h5></div>
+	<div id="ctl01_pnlSearch" class="bi" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl01_btnSearch&#39;)">
+	
+		<div class="boxContent selfClear">
+			<input name="ctl01$txtSearch" type="text" id="ctl01_txtSearch" class="textfield" />
+			<div id="buttonRow"
+				><input type="image" name="ctl01$btnSearch" id="ctl01_btnSearch" class="searchButton" src="Images/btn_search.gif" /><a href="DynPage.aspx?id=4807"><img src="Images/btn_advancedsearch.gif" border="0"></a
+			></div>
+		</div>
+	
+</div>
+	<div class="bb"><div>&nbsp;</div></div>
+	<br/>
+	
+	
+<div id="c_d80c9b0c942e4552b983d691a2207ccf" class="normal"><h2 style="color: #707070; margin: 0 0 3px; padding: 2px; font: bold 13px/1.2 Verdana; text-align: center;">Väder Uppsala</h2></div><script type="text/javascript" src="http://www.klart.se/widget/widget_loader/d80c9b0c942e4552b983d691a2207ccf"></script>
+	
+</div>
+<span class="rtfParagraph"><p></p>
+<div id="services" class="contentBox header">
+<div class="bt">
+<div></div>
+<h5>Tjänster</h5></div>
+<div class="bi">
+<div class="boxContent"><a href="/DynPage.aspx?id=37375" target="_self">Bildspel och filmer</a><br /><a href="DynPage.aspx?id=2581" target="_self">Boka guidad visning</a><br /><a href="DynPage.aspx?id=21343" target="_self">Broschyrer</a><br /><a href="DynPage.aspx?id=2583" target="_self">Kartor</a><br /><a href="DynPage.aspx?id=32641">Länkar och appar</a><br /><a href="DynPage.aspx?id=9529">Lämna evenemang</a></div></div>
+<div class="bb">
+<div> </div></div></div>
+<div id="info" class="contentBox header">
+<div class="bt">
+<div></div>
+<h5>Destination Uppsala </h5></div>
+<div class="bi">
+<div class="boxContent"><a href="DynPage.aspx?id=2586" target="_self">Kontakta oss</a><br /><a href="DynPage.aspx?id=34457" target="_self">Lediga tjänster</a><br /><a href="DynPage.aspx?id=6485" target="_self">Om företaget</a><br /><a href="/DynPage.aspx?id=36410" target="_self">Varumärke Uppsala</a><br /><a href="DynPage.aspx?id=37901">Världsklass Uppsala</a><br /><a href="DynPage.aspx?id=28048" target="_self">Turistbyrå</a><br /></div></div>
+<div class="bb">
+<div> </div></div></div>
+<div id="services" class="contentBox header">
+<div class="bt2"></div>
+<div class="bi">
+<div class="boxContent">
+<p><br /><a href="http://www.uppsala.se/" target="_blank"><img style="PADDING-LEFT: 16px" border="0" alt="Uppsala Kommun" src="/graphics/9702.jpg"></a><br /><br /><br />
+<p><br /><a href="http://www.fyrishov.se/" target="_blank"><img style="PADDING-LEFT: 16px" border="0" alt="Fyrishov" src="/graphics/7785.jpg"></a><br /><br /><br /><a href="http://www.ukk.se/" target="_blank"><img style="PADDING-LEFT: 22px" border="0" alt="Uppsala Konsert & Kongress" src="/graphics/7781.jpg"></a><br /><br /><br /><a href="http://www.uppsalastadsteater.se/" target="_blank"><img style="PADDING-LEFT: 20px" border="0" alt="Uppsala Stadsteater" align="center" src="/graphics/7779.jpg"></a></p>
+<p> </p></div></div>
+<div class="bb">
+<div> </div></div></div>
+<div id="services" class="contentBox header">
+<div class="bt2"></div>
+<div class="bi">
+<div class="boxContent">
+<p style="TEXT-ALIGN: center; MARGIN-RIGHT: 11px"><br /><a href="http://www.europeancitiesmarketing.com/" target="_blank"><img border="0" alt="ECM Logga" src="/graphics/9698.jpg"></a><br /><br /><br /><br /><a href="http://www.iccaworld.com/" target="_blank"><img border="0" alt="ICCA" src="/graphics/10462.jpg"></a><br /><br /><br /><a href="http://www.chamber.se/" target="_blank"><img border="0" alt="Stockholms Handelskammare" src="/graphics/9701.jpg"></a><br /></p>
+<p> </p></div></div>
+<div class="bb">
+<div> </div></div></div></span>
+
+
+							</div>
+							<div id="mainColumn">
+							
+							    
+								        <div id="mainSpot"><img id="topImg" title="Uteservering i Uppsala. Foto: Kalbar/Destination Uppsala." src="/graphics/8171.jpg" alt="Uteservering i Uppsala. Foto: Kalbar/Destination Uppsala." /></div>
+							        
+							    
+								
+<div id="findRight" class="contentBox red">
+	<img src="Images/se.findright_spot.gif" border="0" usemap="#Mapse">
+
+    <map name="Mapse" id="Mapse">
+      <area shape="rect" coords="0,0,130,32" href="/DynPage.aspx?id=1313" target="_self" alt="Bo" />
+      <area shape="rect" coords="131,0,261,32" href="/DynPage.aspx?id=2580" target="_self" alt="Evenemang" />
+      <area shape="rect" coords="262,0,392,32" href="/DynPage.aspx?id=2579" target="_self" alt="Resa" />
+      <area shape="rect" coords="393,0,523,32" href="/DynPage.aspx?id=31455" target="_self" alt="Se &amp; göra" />
+      <area shape="rect" coords="523,0,649,32" href="/DynPage.aspx?id=1314" target="_self" alt="Äta" />
+    </map>
+
+    <map name="Mapen" id="Mapen">
+      <area shape="rect" coords="0,0,130,32" href="/en/DynPage.aspx?id=22415" target="_self" alt="Eat" />
+      <area shape="rect" coords="131,0,261,32" href="/en/DynPage.aspx?id=22414" target="_self" alt="Events" />
+      <area shape="rect" coords="262,0,392,32" href="/en/DynPage.aspx?id=31460" target="_self" alt="To do" />
+      <area shape="rect" coords="393,1,523,32" href="/en/DynPage.aspx?id=22416" target="_self" alt="Travel" />
+      <area shape="rect" coords="523,0,649,32" href="/en/DynPage.aspx?id=22413" target="_self" alt="Stay" />
+    </map>
+	
+</div>
+								
+<div id="breadCrumb" class="contentBox red">
+	<div class="bt"><div></div></div>
+	<div class="boxContent">
+		<div id="topBarBreadCrumb"><A href="?sid=1">Startsida</A></div>
+	</div>
+	<div class="bb"><div>&nbsp;</div></div>
+</div>
+
+								
+<div id="mainContentWrapper" class="selfClear">
+	<div class="subMainLeft">
+		<div id="mainContentBox" class="contentBox">
+			<div class="bt"><div></div></div>
+			<div class="bi">
+				<div id="ctl00_mainBox" class="boxContent">
+					<a id="ctl00_wlBackTop" class="backButton" href="javascript:history.go(-1)"><img src="Images/tillbaka.gif" alt="" /></a>
+					<table cellpadding="0" cellspacing="0" width="470">
+						<tr>
+							<td colspan="2" valign="top">
+								<div id="content-topcell">
+									
+<table width="442" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div class="mainCont">
+				<span id="ctl00_EvObject1_lblName"><font class=head1>Visning av Disagården</font><p></span> 
+				<div align="center">&nbsp;</div>
+				
+				<span id="ctl00_EvObject1_lblDescription">Visning av området och husens interiörer. Vid behov genomförs visningen parallellt på engelska och svenska. På programdagar är visningarna inställda eftersom stugorna hålls öppna.</span><span id="ctl00_EvObject1_lblPlace"><br>
+				<b>Lokal:</b>
+				Disagården, Gamla Uppsala</span><span id="ctl00_EvObject1_lblDate"><br>
+				<b>Startdatum:</b> 2012-06-01<br><b>Slutdatum:</b> 2012-08-31</span><span id="ctl00_EvObject1_lblOpen"><br>
+				<b>Tid:</b>
+				Dagligen kl. 13. Barnvisning kl. 14. Stugvisning i Nyvla eller Bärby mangårdsbyggnad kl. 15</span><span id="ctl00_EvObject1_lblEntrance"><br>
+				<b>Avgift:</b>
+				Fri entré till området, visning 30:-, stud/pens 15:-, barn under 18 år fri entré</span><span id="ctl00_EvObject1_lblArr"><br><br>
+				<b>Arrang&ouml;r:</b>
+				Disagården</span><span id="ctl00_EvObject1_lblPhone"><br>
+				<b>Tfn:</b>
+				018-16 91 80</span><span id="ctl00_EvObject1_lblEmail"><br>
+				<b>E-post:</b>
+				<a href="mailto:disagarden@upplandsmuseet.se">disagarden@upplandsmuseet.se</a></span><span id="ctl00_EvObject1_lblWeb"><br>
+				<b>Webbplats:</b>
+				 <a href="http://www.upplandsmuseet.se" target="_blank">www.upplandsmuseet.se</a></span>
+				
+			</div>
+		</td>
+	</tr>
+</table>
+
+								</div>
+							</td>
+						</tr>
+					</table>
+					<a id="ctl00_wlBackBottom" class="backButton" href="javascript:history.go(-1)"><img src="Images/tillbaka.gif" alt="" /></a>
+				
+<div id="subFooter">
+<table id="Table0" cellSpacing="0" cellPadding="0" border="0" width="450">
+	<tr>
+		<td align="left">
+			<table id="ctl00_ctl00_Table1" cellspacing="0" cellpadding="0" height="19" border="0">
+	<tr>
+		<td width="20" align="left"><a id="ctl00_ctl00_hlPrintImg"><img src="Images/printer.gif" alt="" /></a></td>
+		<td><a id="ctl00_ctl00_hlPrintTxt" href="Print.aspx?id=9583&amp;fmid=34680" target="_blank">Skriv ut sida</a></td>
+	</tr>
+</table>
+
+		</td>
+		<td align="right">
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4ac9f06d766031a2"><img src="http://s7.addthis.com/static/btn/v2/lg-share-sv.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4ac9f06d766031a2"></script>
+<!-- AddThis Button END -->
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+			</div>
+			<div class="bb"><div>&nbsp;</div></div>
+		</div>
+	</div>
+	<div class="subMainRight">
+		
+<div id="spots" class="contentBox header">
+	<div class="spotHeight">
+	
+	
+<div id="divEvenemangsKalender" style="MARGIN-BOTTOM: 10px">
+	<div class="bt"><div></div>
+		<h5>Evenemangskalender</h5>
+	</div>
+	<div style="BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #c2c1c6; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-WEIGHT: bold; BORDER-RIGHT: #999999 1px solid; PADDING-TOP: 10px">
+		<div>
+			Titel, artist eller fritext<br>
+			<input name="ctl00$ctl01$ucEvenemangskalender$tbFreeText" type="text" maxlength="100" id="ctl00_ctl01_ucEvenemangskalender_tbFreeText" />
+		</div>
+		<div style="MARGIN-TOP: 5px">
+			Kategori<br>
+			<select name="ctl00$ctl01$ucEvenemangskalender$ddlCategory" id="ctl00_ctl01_ucEvenemangskalender_ddlCategory" style="width:100%;">
+	<option value="-1">Alla</option>
+	<option value="4">Allm&#228;n dans</option>
+	<option value="9">Barn/ungd./familj</option>
+	<option value="11">Film/foto</option>
+	<option value="6">Folkfest/festival</option>
+	<option value="18">F&#246;rel&#228;sning</option>
+	<option value="15">Idrott</option>
+	<option value="3">Konst/hantverk</option>
+	<option value="7">Kulturhistoria</option>
+	<option value="12">Litteratur</option>
+	<option value="14">Marknad/auktion</option>
+	<option value="17">Mat/dryck</option>
+	<option value="1">Musik</option>
+	<option value="10">Natur/milj&#246;</option>
+	<option value="2">Scen/teater/dans</option>
+	<option value="5">Utst&#228;llning</option>
+	<option value="13">Vetenskap</option>
+	<option value="8">Visning/guidetur</option>
+	<option value="16">&#214;vrigt</option>
+
+</select>
+		</div>
+		<div style="MARGIN-TOP: 5px">
+			Från datum<br>
+			<input name="ctl00$ctl01$ucEvenemangskalender$tbStartDate" type="text" value="2012-06-23" id="ctl00_ctl01_ucEvenemangskalender_tbStartDate" style="width:80px;" />
+			<span onmouseover="this.style.cursor='hand'" onclick='SelectStartDate()'>
+				<img id="ctl00_ctl01_ucEvenemangskalender_Image1" title="Klicka här för att välja datum" src="Images/kalender2.gif" />
+			</span>
+		</div>
+		<div style="MARGIN-TOP: 5px; VERTICAL-ALIGN: middle">
+			<table id="ctl00_ctl01_ucEvenemangskalender_rblScope">
+	<tr>
+		<td><input id="ctl00_ctl01_ucEvenemangskalender_rblScope_0" type="radio" name="ctl00$ctl01$ucEvenemangskalender$rblScope" value="0" checked="checked" /><label for="ctl00_ctl01_ucEvenemangskalender_rblScope_0">och framåt</label></td>
+	</tr><tr>
+		<td><input id="ctl00_ctl01_ucEvenemangskalender_rblScope_1" type="radio" name="ctl00$ctl01$ucEvenemangskalender$rblScope" value="1" /><label for="ctl00_ctl01_ucEvenemangskalender_rblScope_1">endast vald dag</label></td>
+	</tr><tr>
+		<td><input id="ctl00_ctl01_ucEvenemangskalender_rblScope_2" type="radio" name="ctl00$ctl01$ucEvenemangskalender$rblScope" value="2" /><label for="ctl00_ctl01_ucEvenemangskalender_rblScope_2">en vecka framåt</label></td>
+	</tr><tr>
+		<td><input id="ctl00_ctl01_ucEvenemangskalender_rblScope_3" type="radio" name="ctl00$ctl01$ucEvenemangskalender$rblScope" value="3" /><label for="ctl00_ctl01_ucEvenemangskalender_rblScope_3">en månad</label></td>
+	</tr><tr>
+		<td><input id="ctl00_ctl01_ucEvenemangskalender_rblScope_4" type="radio" name="ctl00$ctl01$ucEvenemangskalender$rblScope" value="4" /><label for="ctl00_ctl01_ucEvenemangskalender_rblScope_4">t.o.m. datum:</label></td>
+	</tr>
+</table>
+		</div>
+		<div style="MARGIN-TOP: 5px">
+			<input name="ctl00$ctl01$ucEvenemangskalender$tbEndDate" type="text" id="ctl00_ctl01_ucEvenemangskalender_tbEndDate" style="width:80px;" />
+			<span onmouseover="this.style.cursor='hand'" onclick='SelectEndDate()'>
+				<img id="ctl00_ctl01_ucEvenemangskalender_Image2" title="Klicka här för att välja datum" src="Images/kalender2.gif" />
+			</span>
+		</div>
+		<div style="MARGIN-TOP: 5px">
+			<input id="ctl00_ctl01_ucEvenemangskalender_cbBigEvents" type="checkbox" name="ctl00$ctl01$ucEvenemangskalender$cbBigEvents" /><label for="ctl00_ctl01_ucEvenemangskalender_cbBigEvents">Större evenemang</label>
+		</div>
+		<div style="MARGIN-TOP: 5px">
+			<a id="ctl00_ctl01_ucEvenemangskalender_btnSearch" class="Evenemangskalender_SearchButton" href="javascript:__doPostBack(&#39;ctl00$ctl01$ucEvenemangskalender$btnSearch&#39;,&#39;&#39;)"><img src="Images/btn_search.gif" alt="SÖK" /></a>
+		</div>
+		
+	</div>
+</div>
+<script type="text/javascript">
+	function SelectStartDate() {
+		var field = "ctl00_ctl01_ucEvenemangskalender_tbStartDate";
+		var tbStartDate = document.getElementById(field);
+		
+		var value = tbStartDate.value;
+
+		MM_openBrWindow('DateSelector.aspx?field='+field+'&val='+ value,'','width=250,height=160')
+	}
+	
+	function SelectEndDate() {
+		var field = "ctl00_ctl01_ucEvenemangskalender_tbEndDate";
+		var tbStartDate = document.getElementById("ctl00_ctl01_ucEvenemangskalender_tbStartDate");
+		var tbEndDate = document.getElementById(field);
+
+		var value = tbEndDate.value;
+		if (value == undefined || value.length == 0)
+			value = tbStartDate.value;
+
+		MM_openBrWindow('DateSelector.aspx?field='+field+'&val='+ value,'','width=250,height=160');
+		$("#ctl00_ctl01_ucEvenemangskalender_rblScope :radio:last").get(0).checked = true;		
+	}
+	
+	document.getElementById("ctl00_ctl01_ucEvenemangskalender_tbStartDate").style.width = "80px";
+	document.getElementById("ctl00_ctl01_ucEvenemangskalender_tbEndDate").style.width = "80px";
+</script>
+
+	<div class="bt"><div></div><h5>Aktuellt</h5></div>
+	<div class="bi">
+		<div class="boxContent">
+			
+					<div class="spotObj" onClick="gotoSpot('DynPage.aspx?id=9582&today=true&area=1&area=2&area=3&area=4&area=5','Samma fönster')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_0" href="DynPage.aspx?id=9582&amp;today=true&amp;area=1&amp;area=2&amp;area=3&amp;area=4&amp;area=5">Dagens evenemang</a><br>
+						<font class="head2">
+<p><br /><img border="0" hspace="0" alt="Dagens evenemang i Uppsala, konserter, aktiviteter med mera. Foto: Destnation Uppsala/Kalbar." align="left" src="/graphics/9631.jpg" width="156" height="67"><br /></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p></font> </p>
+					</div>
+				
+					<div class="spotObj alt" onClick="gotoSpot('http://www.arrivalguides.com/sv/Travelguides/Europe/Sweden/UPPSALA','_blank')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_1" href="http://www.arrivalguides.com/sv/Travelguides/Europe/Sweden/UPPSALA" target="_blank">Ny reseguide om Uppsala</a><br>
+						<p><br /><a href="/DynPage.aspx?id=9582&search=true&txt=pelle%20svansl%c3%b6s-promenad&lmt=10000" target="_self"></a></p>
+<p><img border="0" alt="Uppsala slott. Foto: Xulio Gonzalez/Destination Uppsala." src="/graphics/10634.jpg"></p>
+					</div>
+				
+					<div class="spotObj" onClick="gotoSpot('https://www.facebook.com/DestinationUppsala','_blank')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_2" href="https://www.facebook.com/DestinationUppsala" target="_blank">Följ oss på Facebook </a><br>
+						<p><br /><a href="https://www.facebook.com/DestinationUppsala" target="_blank"><img border="0" hspace="0" alt="Följ Destination Uppsala på Facebook och ta del av tips på evenemang, aktiviteter med mera." align="left" src="/graphics/9627.jpg" width="157" height="44"></a></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+					</div>
+				
+					<div class="spotObj alt" onClick="gotoSpot('DynPage.aspx?id=12644','Samma fönster')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_3" href="DynPage.aspx?id=12644">Sök i möteskalendern</a><br>
+						<p><br /><a href="DynPage.aspx?id=12644" target="_self"><img border="0" alt="Möteskalender" src="/graphics/8815.jpg"></a></p>
+<p> </p>
+					</div>
+				
+					<div class="spotObj" onClick="gotoSpot('DynPage.aspx?id=26207','Samma fönster')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_4" href="DynPage.aspx?id=26207">Köp Uppsalakortet</a><br>
+						<p><img src="../graphics/7280.jpg" border="0" alt="Uppsalakortet" hspace="5" vspace="5" width="110" height="70" align="left" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br />&nbsp;</p>
+					</div>
+				
+					<div class="spotObj alt" onClick="gotoSpot('http://www.evenemangsstadenuppsala.se','_blank')">
+						<a id="ctl00_ctl01_rptSpots_hpTitle_5" href="http://www.evenemangsstadenuppsala.se" target="_blank">Följ oss på bloggen</a><br>
+						<p><br /><img border="0" alt="Evenemangsstaden Uppsala" src="/graphics/8812.jpg"></p>
+<p> </p>
+<p> </p>
+					</div>
+				
+		</div>
+	</div>
+	<div class="bb"><div>&nbsp;</div></div>
+	</div>
+</div>
+						
+	</div>
+</div>
+
+
+							</div>
+						</div>
+					</div>
+					
+<div id="footer" class="selfClear">
+	<div id="footerLeft">
+		<span class="rtfParagraph"><p>© Destination Uppsala, Fyristorg 8, 753 10 Uppsala <br />+46 (0)18-727 48 00, <a href="mailto:info@destinationuppsala.se" target="_self">info@destinationuppsala.se</a></p></span>
+	</div>
+	<div id="footerRight">
+		<span class="rtfParagraph"><p align="right"><a href="DynPage.aspx?id=9474&wurl=http%3a%2f%2fwww.destinationuppsala.se%2fDynPage.aspx%3fid%3d9583%26fmid%3d34680" target="_self">Webbmaster</a><br /><a href="/DynPage.aspx?id=22255" target="_self">Om webbplatsen</a></p></span>
+	</div>
+</div>
+
+				</div>
+				
+				
+				
+				<div id="adColumn">
+				    <!-- Tripadvisor -->
+				    
+				            <div id="TA_linkingWidgetRedesign495" class="TA_linkingWidgetRedesign">
+                            <ul id="Yqt7sa8lWRgI" class="TA_links isAK8CvgV">
+                            <li id="ZAyugza" class="mLvM9vBl">Läs omdömen om <a target="_blank" href="http://www.tripadvisor.se/Tourism-g189871-Uppsala_Uppland_Swedish_Lakeland-Vacations.html">Uppsala</a></li>
+                            </ul>
+                            </div>
+                            <script src="http://www.jscache.com/wejs?wtype=linkingWidgetRedesign&amp;uniq=495&amp;locationId=189871&amp;lang=sv&amp;border=true"></script>
+                        
+                    
+				    <!-- Tripadvisor end -->
+				    
+				    <br />
+				    
+				    
+<SCRIPT language="javascript" src="Lib/AC_OETags.js"></SCRIPT>
+<div id="Advertising_lblAdHeader" class="AdHeader">Annonser</div>
+<a href="BannerTrace.ashx?Id=131" target="_self"><img src="Graphics/9425.jpg" /></a><a href="BannerTrace.ashx?Id=82" target="_blank"><img src="Graphics/8411.jpg" /></a>
+<div id="flashContent">
+	<SCRIPT language="JavaScript" type="text/javascript">
+		// -----------------------------------------------------------------------------
+		// Globals
+		// Major version of Flash required
+		var requiredMajorVersion = '8';
+		// Minor version of Flash required
+		var requiredMinorVersion = '0';
+		// Minor version of Flash required
+		var requiredRevision = '45';
+		// -----------------------------------------------------------------------------
+	</SCRIPT>
+	<SCRIPT language="JavaScript" type="text/javascript">
+		// Version check based upon the values entered above in "Globals"
+		var hasReqestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+		// Check to see if the version meets the requirements for playback
+		if (hasReqestedVersion) {
+			AC_FL_RunContent(
+    'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+    'width', '140',
+    'height', '170',
+    'src', 'Graphics/9787',
+    'quality', 'high',
+    'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+    'align', 'middle',
+    'play', 'true',
+    'loop', 'true',
+    'scale', 'showall',
+    'wmode', 'opaque',
+    'devicefont', 'false',
+    'id', 'main',
+    'bgcolor', '#ffffff',
+    'name', '9787',
+    'FlashVars', 'Url=/BannerTrace.ashx?Id=152&Target=_blank&Alt=Köp Uppsalakortet',
+    'menu', 'true',
+    'allowFullScreen', 'false',
+    'allowScriptAccess','sameDomain',
+    'movie', 'Graphics/9787',
+    'salign', '',
+    'base', 'Graphics/'
+    ); //end AC code
+
+		} else {  // flash is too old or we can't detect the plugin		
+			var alternateContent = '';
+			document.write(alternateContent);  // insert non-flash content
+		}
+	</SCRIPT>
+
+	
+</div>
+
+<div id="flashContent">
+	<SCRIPT language="JavaScript" type="text/javascript">
+		// -----------------------------------------------------------------------------
+		// Globals
+		// Major version of Flash required
+		var requiredMajorVersion = '8';
+		// Minor version of Flash required
+		var requiredMinorVersion = '0';
+		// Minor version of Flash required
+		var requiredRevision = '45';
+		// -----------------------------------------------------------------------------
+	</SCRIPT>
+	<SCRIPT language="JavaScript" type="text/javascript">
+		// Version check based upon the values entered above in "Globals"
+		var hasReqestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+		// Check to see if the version meets the requirements for playback
+		if (hasReqestedVersion) {
+			AC_FL_RunContent(
+    'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+    'width', '140',
+    'height', '150',
+    'src', 'Graphics/8875',
+    'quality', 'high',
+    'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+    'align', 'middle',
+    'play', 'true',
+    'loop', 'true',
+    'scale', 'showall',
+    'wmode', 'opaque',
+    'devicefont', 'false',
+    'id', 'main',
+    'bgcolor', '#ffffff',
+    'name', '8875',
+    'FlashVars', 'Url=/BannerTrace.ashx?Id=111&Target=_blank&Alt=',
+    'menu', 'true',
+    'allowFullScreen', 'false',
+    'allowScriptAccess','sameDomain',
+    'movie', 'Graphics/8875',
+    'salign', '',
+    'base', 'Graphics/'
+    ); //end AC code
+
+		} else {  // flash is too old or we can't detect the plugin		
+			var alternateContent = '';
+			document.write(alternateContent);  // insert non-flash content
+		}
+	</SCRIPT>
+
+	
+</div>
+<a href="BannerTrace.ashx?Id=180" title="Världsklass Uppsala" target="_self"><img src="Graphics/10548.jpg" alt="Världsklass Uppsala" /></a><a href="BannerTrace.ashx?Id=178" title="Elitidrottsstaden" target="_blank"><img src="Graphics/10545.jpg" alt="Elitidrottsstaden" /></a><a href="BannerTrace.ashx?Id=154" target="_blank"><img src="Graphics/9875.jpg" /></a><a href="BannerTrace.ashx?Id=177" title="Tävlingsstaden 2012" target="_blank"><img src="Graphics/10543.gif" alt="Tävlingsstaden 2012" /></a><a href="BannerTrace.ashx?Id=179" title="Kulturstaden Uppsala 2012" target="_blank"><img src="Graphics/10546.gif" alt="Kulturstaden Uppsala 2012" /></a>
+</div>
+			</div>
+		
+<script src="/WebResource.axd?d=KvnBGqvA2mpxRBN-FZNMVQ2&amp;t=634364818423530000" type="text/javascript"></script>
+</form>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+		_uacct = "UA-2944564-1";
+		urchinTracker();
+		</script>
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        //$('.infiniteCarousel').infiniteCarousel("pager");
+
+		        // Load carousel without pagers
+		        $('.infiniteCarousel').infiniteCarousel("none");				
+		    });
+		</script>
+	</body>
+</html>
+
