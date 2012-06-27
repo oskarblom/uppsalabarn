@@ -33,5 +33,5 @@ web = soup.find("strong", text="Webb")
 email = soup.find("strong", text="E-post")
 
 phone = soup.find("strong", text="Kontakt")
-print phone.parent.text
+print phone.parent.parent.text
 #print email.parent.findNextSibling("a").find(text=True)

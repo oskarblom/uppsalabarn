@@ -80,7 +80,12 @@ def destinationuppsala():
             act = Activity(city="uppsala")
             act.source = "destinationuppsala"
             act.name = item_soup.find("font", "head1").find(text=True).strip()
-            act.description = item_soup.find("span", id=desclabel_re).find(text=True).strip()
+
+            desc = item_soup.find("span", id=desclabel_re)
+            if desc:
+                desc_text = desc.find(text=True)
+                if desc_text:
+                    act.description = desc_text.strip()
 
             phone = item_soup.find("span", id=phonelabel_re)
             if phone:

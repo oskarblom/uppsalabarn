@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="list-container">
+    <h2>Välkommen till Uppsala Barn!</h2>
+    <!-- TODO: hero unit on no cookie -->
+    <p>Här hittar du aktiviteter och evenemang för barn i Uppsala.</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>Datum</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for act in acts %}
+            <tr>
+                <td>{{ act.name }} </td>
+                <td> {{ act.starts_at.date() }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <ul>
+    </ul>
+</div>
+{% endblock %}
