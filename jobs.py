@@ -40,7 +40,7 @@ def untguiden():
             if url:
                 act.url = url.parent.findNextSibling("a")["href"].strip()
 
-            email = item_soup.find("strong", text="Webb")
+            email = item_soup.find("strong", text="E-post")
             if email:
                 act.email = email.parent.findNextSibling("a").find(text=True).strip()
 
@@ -64,7 +64,6 @@ def destinationuppsala():
     emaillabel_re = re.compile("Email$")
 
     dates = (date.today() + timedelta(days=i) for i in range(1))
-
 
     for act_date in dates:
         eventlist_url = "%s/DynPage.aspx?id=9582&search=true&start=%s&end=%s&cat=9&txt=" % (base_url, act_date, act_date)

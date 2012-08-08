@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="span6 offset5">
+        <h1 id="activity-heading">{{ act.name }}</h2>
+    </div>
+</div>
+
+{% if act.description %}
+<div class="row activity-category">
+    <div class="span5">
+        <h2>Beskrivning</h2>
+    </div>
+    <div class="span4">
+        <p>{{ act.description }}</p>
+    </div>
+</div>
+{% endif %}
+
+{% if config["DEBUG"] %}
+<div class="row activity-category">
+    <div class="span5">
+        <h2>Källa</h2>
+    </div>
+    <div class="span4">
+        <p>{{ act.source }}</p>
+    </div>
+</div>
+{% endif %}
+
+{% if act.url %}
+<div class="row activity-category">
+    <div class="span5">
+        <h2>Länk</h2>
+    </div>
+    <div class="span4">
+        <p><a href="{{ act.url }}">{{ act.url }}</a></p>
+    </div>
+</div>
+{% endif %}
+
+{% if act.email %}
+<div class="row activity-category">
+    <div class="span5">
+        <h2>E-post</h2>
+    </div>
+    <div class="span4">
+        <p>{{ act.email }}</p>
+    </div>
+</div>
+{% endif %}
+
+
+{% endblock %}

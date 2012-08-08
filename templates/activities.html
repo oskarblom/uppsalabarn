@@ -1,27 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="list-container">
-    <h2>Välkommen till Uppsala Barn!</h2>
-    <!-- TODO: hero unit on no cookie -->
-    <p>Här hittar du aktiviteter och evenemang för barn i Uppsala.</p>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Namn</th>
-                <th>Datum</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for act in acts %}
-            <tr>
-                <td>{{ act.name }} </td>
-                <td> {{ act.starts_at.date() }} </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <ul>
-    </ul>
+<div class="row">
+    <div class="span8 offset2">
+        <h1>Välkommen till Uppsala Barn!</h1>
+        <!-- TODO: hero unit on no cookie -->
+        <p>Här hittar du aktiviteter och evenemang för barn i Uppsala.</p>
+        <table class="table table-striped" id="activity-table">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>Datum</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for act in acts %}
+                <tr>
+                    <td><a href="/activity/{{ act.slug }}">{{ act.name }}</a></td>
+                    <td> {{ act.starts_at.date() }} </td>
+                    </a>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 {% endblock %}

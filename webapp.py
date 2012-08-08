@@ -1,5 +1,5 @@
 #from gevent import monkey; monkey.patch_all()
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, request
 from model import Activity
 from mongoengine import connect
 import datetime
@@ -16,14 +16,22 @@ def activities():
 
 @app.route("/activity/<string:slug>")
 def activity(slug):
-    act = Activity.objects(slug=slug)
+    act = Activity.objects(slug=slug).first()
     if not act:
         abort(404)
     app.logger.debug(act)
-    return "%s slug was passed" % act
+    return render_template("activity.html", act=act)
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/test")
+def test():
+    return render_template("test.html")
 
 if __name__ == '__main__':
     connect("uppsalabarn")
-    app.run(debug=True)
+    app.run(host="0.0.0.0", debug=True)
     #app.run()
 

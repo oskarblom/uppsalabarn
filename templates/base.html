@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Uppsala barn</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <title>Uppsala barn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aktiviteter för barn i uppsalAktiviteter för barn i uppsala">
+        <meta name="author" content="oskar.blom@gmail.com">
 
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/main.css" type="text/css">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/app.css" rel="stylesheet" type="text/css">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Uppsala barn</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Aktiviteter</a></li>
-              <li><a href="#about">Om</a></li>
-              <li><a href="#contact">Kontakt</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="/">Uppsala barn</a>
+                    <ul class="nav">
+                        <li {% if request.path in ['/'] %}class="active"{% endif %}><a href="/">Aktiviteter</a></li>
+                        <li {% if request.path in ['/about'] %}class="active"{% endif %}><a href="/about">Om</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">{% block content %} {% endblock %}</div> <!-- /container -->
+        <div class="container">{% block content %} {% endblock %}
+            <footer><p>En webbtjänst av <a href="http://oskarblom.se">Oskar Blom</a></p></footer>
+        </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/js/bootstrap.js"></script>
-    <script src="/static/js/jquery.js"></script>
-
-  </body>
+        <script src="/static/vendor/jquery/js/jquery-1.7.2.min.js"></script>
+        <script src="/static/vendor/bootstrap/js/bootstrap.js"></script>
+    </body>
 </html>
 

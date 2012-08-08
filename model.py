@@ -4,7 +4,7 @@ import datetime
 import hashlib
 import re
 
-slug_re = u"[^A-ZÅÄÖa-zåäö ]"
+slug_re = re.compile(u"[^A-ZÅÄÖa-zåäö0-9 ]")
 
 class Activity(Document):
     name = StringField(required=True)
@@ -16,6 +16,7 @@ class Activity(Document):
     email = StringField()
     phone = StringField()
     slug = StringField()
+    original_url = StringField()
 
     @queryset_manager
     def old(cls, queryset):
@@ -39,7 +40,7 @@ class Activity(Document):
     def save(self, *args, **kwargs):
         charmap = {
             u"å": u"a",
-            u"å": u"a",
+            u"ä": u"a",
             u"ö": u"o",
             u" ": u"-"
         }
