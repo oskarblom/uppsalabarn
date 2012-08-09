@@ -1,0 +1,39 @@
+@import "static/vendor/bootstrap/css/bootstrap.min.scss";
+
+$lime: #D1F2A5;
+$honey: #EFFAB4;
+$lightorange: #FFC48C;
+$orange: #FF9F80;
+$pink: #F56991;
+
+body {
+    padding-top: 60px;
+}
+
+.activity-category h2 {
+    text-align: right;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #E5E5E5;
+    color: #999;
+}
+
+.navbar {
+    font-size: 18px;
+    line-height: 100px;
+}
+
+#about img {
+    float: right;
+    margin-left: 5px;
+}
+
