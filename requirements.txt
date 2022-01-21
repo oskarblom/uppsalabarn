@@ -6,7 +6,7 @@ Werkzeug==0.8.3
 anyjson==0.3.1
 gevent==0.13.7
 greenlet==0.3.4
-ipython==0.12.1
+ipython==7.16.3
 mongoengine==0.6.10
 pymongo==2.1.1
 readline==6.2.2
